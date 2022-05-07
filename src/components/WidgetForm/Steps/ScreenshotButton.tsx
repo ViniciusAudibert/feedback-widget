@@ -27,7 +27,11 @@ export function ScreenshotButton({ onScreenshotTook, screenshot }: Props) {
         type="button"
         onClick={() => onScreenshotTook(null)}
         className="p-1 w-10 h-10 rounded-md border-transparent flex justify-end items-end text-zinc-400 hover:text-zinc-100 transition-color"
-        style={{ backgroundImage: `url(${screenshot})`, backgroundPosition: 'right bottom', backgroundSize: 180 }}
+        style={{
+          backgroundImage: `url(${screenshot})`,
+          backgroundPosition: 'right bottom',
+          backgroundSize: 180,
+        }}
       >
         <Trash weight="fill" />
       </button>
